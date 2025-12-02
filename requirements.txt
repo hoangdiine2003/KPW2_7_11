@@ -1,14 +1,22 @@
 streamlit>=1.30.0,<2.0
 pandas>=2.0.3,<3.0
-numpy>=1.25.0,<2.0
+
+# Cho phép numpy 2.x để tương thích TensorFlow + SciPy + scikit-learn
+numpy>=2.1.0
+
 yfinance>=0.2.27
 vnstock>=0.2.5
 plotly>=5.20.0
+
+# Các bản mới đã support numpy 2.x + Python 3.13
 scikit-learn>=1.3.2
-scipy>=1.11.0
-tensorflow>=2.12.0
+scipy>=1.15.0
+
+# TensorFlow bản mới (log cho thấy đang kéo 2.20.0)
+tensorflow>=2.20.0
+
 openpyxl>=3.1.2
 requests>=2.31.0
 # Optional (only if you use these features)
 # seaborn>=0.12.2
-# jupyterlab (for notebooks)
+# jupyterlab
